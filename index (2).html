@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoteAware | Empowering Every Citizen's Voice</title>
+  <meta name="description" content="A simple, interactive guide to understanding the election process, voter rights, important deadlines, and preparing to cast your ballot." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <!-- Skip to Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="top-nav">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" aria-label="VoteAware Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 12 2 2 4-4"></path>
+            <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"></path>
+            <path d="M22 19H2"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span>Vote<strong>Aware</strong></span>
+          <small class="tagline">Citizen Election Hub</small>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">Why Vote</a></li>
+          <li><a href="#process" class="nav-link">Election Process</a></li>
+          <li><a href="#voter-info" class="nav-link">Voter Guide</a></li>
+          <li><a href="#checklist" class="nav-link">Readiness Checklist</a></li>
+          <li><a href="#dates" class="nav-link">Key Dates</a></li>
+          <li><a href="#quiz-section" class="nav-link quiz-highlight">Voter Quiz</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle-btn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            Civic Education & Voter Empowerment
+          </div>
+          <h1 class="hero-title">
+            Your Vote is Your <span>Voice</span>. Shape the Future.
+          </h1>
+          <p class="hero-desc">
+            Democracy works best when everyone participates. Whether you are a first-time voter or a lifelong participant, explore how the voting process works, check your readiness, and make an informed decision.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#process" class="btn btn-primary">
+              <span>Explore The Process</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+            </a>
+            <a href="#quiz-section" class="btn btn-outline">
+              <span>Test Your Voter IQ</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </a>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-num">100%</div>
+              <div class="highlight-label">Secret & Secure Ballot</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-num">18+</div>
+              <div class="highlight-label">Eligible Voting Age</div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-num">1 Citizen</div>
+              <div class="highlight-label">1 Equal Vote Power</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Countdown Card -->
+        <div class="hero-card-wrap">
+          <div class="countdown-card">
+            <div class="countdown-header">
+              <span class="card-badge">Upcoming Milestone</span>
+              <h3>General Election Day Countdown</h3>
+              <p class="countdown-sub">Mark your calendar and ensure your registration is active!</p>
+            </div>
+
+            <div class="timer-grid" id="election-timer">
+              <div class="timer-unit">
+                <span class="timer-value" id="days">00</span>
+                <span class="timer-label">Days</span>
+              </div>
+              <div class="timer-separator">:</div>
+              <div class="timer-unit">
+                <span class="timer-value" id="hours">00</span>
+                <span class="timer-label">Hours</span>
+              </div>
+              <div class="timer-separator">:</div>
+              <div class="timer-unit">
+                <span class="timer-value" id="minutes">00</span>
+                <span class="timer-label">Mins</span>
+              </div>
+              <div class="timer-separator">:</div>
+              <div class="timer-unit">
+                <span class="timer-value" id="seconds">00</span>
+                <span class="timer-label">Secs</span>
+              </div>
+            </div>
+
+            <div class="countdown-footer">
+              <a href="#dates" class="text-link">View complete election schedule &rarr;</a>
+            </div>
+          </div>
+
+          <div class="quick-tip-card">
+            <div class="tip-icon">💡</div>
+            <div class="tip-text">
+              <strong>Quick Tip for First-Time Voters:</strong>
+              <p>You don't need to decide on polling day itself. Review candidate track records and verified manifestos well in advance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Vote Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-tag">Democracy in Action</span>
+          <h2 class="section-title">Why Does Your Vote Really Matter?</h2>
+          <p class="section-subtitle">
+            Every ballot cast sends a clear message about the priorities of your community, healthcare, education, economy, and freedom.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="feature-card">
+            <div class="feature-icon bg-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Protects Your Rights</h3>
+            <p>Elected officials write and reform the laws that govern everyday life. Your vote helps elect representatives who defend your constitutional freedoms and civil liberties.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
+                <path d="M12 18V6"></path>
+              </svg>
+            </div>
+            <h3>Decides Public Spending</h3>
+            <p>From roads, clean drinking water, schools, and hospitals to public parks and climate infrastructure, your taxes are allocated by leaders chosen through elections.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Holds Leaders Accountable</h3>
+            <p>If politicians fail to deliver on promises or act against public welfare, elections provide peaceful, constitutional power to choose fresh and accountable leadership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step-by-Step Election Process Section -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Step-By-Step Journey</span>
+          <h2 class="section-title">The Election Process Made Simple</h2>
+          <p class="section-subtitle">
+            Demystifying how an election works from initial voter enrollment all the way to democratic results.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <div class="process-body">
+              <div class="process-top">
+                <span class="step-category">Preparation</span>
+                <h3>Voter Registration & Electoral Roll</h3>
+              </div>
+              <p>To vote, you must be registered on the official electoral roll for your constituency. Registration happens online or via designated electoral offices before deadline cutoff dates.</p>
+              <div class="process-tips"><strong>What to do:</strong> Check your name on the electoral roll online 30 days before election day.</div>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <div class="process-body">
+              <div class="process-top">
+                <span class="step-category">Informed Civic Choice</span>
+                <h3>Candidate Research & Manifestos</h3>
+              </div>
+              <p>Candidates and political parties publish formal manifestos, declarations, and affidavits detailing their policy goals, educational background, assets, and any criminal disclosures.</p>
+              <div class="process-tips"><strong>What to do:</strong> Compare policies objectively; look beyond social media slogans and fact-check key claims.</div>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <div class="process-body">
+              <div class="process-top">
+                <span class="step-category">Logistics</span>
+                <h3>Locating Your Polling Station</h3>
+              </div>
+              <p>Every voter is assigned a specific polling booth close to their registered address. Your voter slip or voter portal shows exact booth address and room number.</p>
+              <div class="process-tips"><strong>What to do:</strong> Confirm booth location the day prior and plan transport during quiet polling hours.</div>
+            </div>
+          </div>
+
+          <div class="process-card highlight-step">
+            <div class="process-step-num">04</div>
+            <div class="process-body">
+              <div class="process-top">
+                <span class="step-category">Polling Day</span>
+                <h3>Casting Your Secret Ballot</h3>
+              </div>
+              <p>Present valid photo ID to the polling officer, verify your identity signature, have your finger marked with indelible ink, enter the private voting compartment, and cast your vote via electronic voting machine (EVM) or paper ballot.</p>
+              <div class="process-tips"><strong>Crucial Rule:</strong> Your vote is strictly secret. No one is permitted to photograph or watch your choice.</div>
+            </div>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">05</div>
+            <div class="process-body">
+              <div class="process-top">
+                <span class="step-category">Democratic Resolution</span>
+                <h3>Vote Counting & Declaration</h3>
+              </div>
+              <p>After polling closes, voting machines and ballot boxes are securely sealed under candidate agents' supervision and moved to guarded counting centers. On Counting Day, votes are tallied transparently and official winners declared.</p>
+              <div class="process-tips"><strong>What to do:</strong> Follow certified election commission announcements to avoid rumors or misinformation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voter Information Hub -->
+    <section class="section voter-info-section" id="voter-info">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-tag">Essential Knowledge</span>
+          <h2 class="section-title">Voter Guidelines & Rights</h2>
+          <p class="section-subtitle">Everything you need to know before walking into the polling station.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="info-box">
+            <div class="info-box-header">
+              <div class="info-box-icon">📋</div>
+              <h3>Voter Eligibility & Valid Documents</h3>
+            </div>
+            <div class="info-box-content">
+              <ul class="styled-list">
+                <li><strong>Age Requirement:</strong> Must be 18 years of age or older on or before the qualifying eligibility date.</li>
+                <li><strong>Citizenship:</strong> Must be a recognized citizen of the country in which the election is held.</li>
+                <li><strong>Registration:</strong> Name must be verified on the official electoral roll for your constituency.</li>
+                <li><strong>Recognized Photo IDs:</strong>
+                  <div class="id-tags">
+                    <span class="tag">Voter Photo Identity Card (EPIC)</span>
+                    <span class="tag">Passport</span>
+                    <span class="tag">Driving License</span>
+                    <span class="tag">National / Aadhaar ID</span>
+                    <span class="tag">Government Employee ID</span>
+                    <span class="tag">Bank Passbook with Photo</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <div class="info-box-header">
+              <div class="info-box-icon">⚖️</div>
+              <h3>Your Inalienable Voter Rights</h3>
+            </div>
+            <div class="info-box-content">
+              <ul class="styled-list">
+                <li><strong>Right to a Secret Ballot:</strong> No authority, family member, or employer can force you to reveal your vote.</li>
+                <li><strong>Accessibility for All:</strong> Ramps, braille ballot papers/EVMs, wheelchair assistance, and priority queues are mandated for senior citizens and voters with disabilities.</li>
+                <li><strong>Right to Reject (NOTA / Blank):</strong> In many democracies, you have the right to register a "None of the Above" or blank vote to express dissent against all nominated candidates.</li>
+                <li><strong>Protection Against Voter Intimidation:</strong> Threatening, bribing, or coercing a voter is a serious punishable offense.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polling Day Dos and Don'ts -->
+        <div class="dodont-container">
+          <h3 class="dodont-title">Polling Station Etiquette: Do's & Don'ts</h3>
+          <div class="grid grid-2">
+            <div class="card-dos">
+              <div class="card-dodont-header">
+                <span class="status-badge green-badge">DO</span>
+                <h4>Best Practices on Voting Day</h4>
+              </div>
+              <ul class="check-list">
+                <li>Carry your valid original photo ID card along with your voter information slip.</li>
+                <li>Verify your booth number and serial number ahead of time to save time.</li>
+                <li>Cooperate politely with polling staff, verification officers, and security personnel.</li>
+                <li>Check the paper audit slip (VVPAT or confirmation slip) when casting your electronic vote.</li>
+                <li>Wear comfortable clothing and follow orderly queues.</li>
+              </ul>
+            </div>
+
+            <div class="card-donts">
+              <div class="card-dodont-header">
+                <span class="status-badge red-badge">DON'T</span>
+                <h4>Prohibited Actions at the Booth</h4>
+              </div>
+              <ul class="cross-list">
+                <li>Never take selfies or photos inside the voting compartment or share your ballot picture.</li>
+                <li>Do not wear political apparel, candidate badges, or promotional merchandise inside the booth.</li>
+                <li>Do not attempt to vote on behalf of someone else (proxy voting without authorization is illegal).</li>
+                <li>Do not bring mobile phones into the voting booth if local regulations restrict electronics.</li>
+                <li>Never accept cash, gifts, food vouchers, or favors in exchange for your vote.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Myth vs Fact Section -->
+        <div class="myth-fact-container">
+          <h3 class="dodont-title text-center">Voting Myths vs. True Facts</h3>
+          <div class="grid grid-2">
+            <div class="myth-card">
+              <div class="myth-badge">MYTH</div>
+              <p class="myth-text">"If I have a Voter ID card, I can vote at any polling station anywhere in the country."</p>
+              <div class="fact-badge">FACT</div>
+              <p class="fact-text">You can only vote at the specific polling booth in the constituency where your name appears on the active electoral roll.</p>
+            </div>
+
+            <div class="myth-card">
+              <div class="myth-badge">MYTH</div>
+              <p class="myth-text">"My single vote won't make any difference among millions of citizens."</p>
+              <div class="fact-badge">FACT</div>
+              <p class="fact-text">Scores of legislative seats and local council wards have been won or tied by a single-digit margin. Every individual vote carries equal constitutional weight.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Voter Readiness Checklist -->
+    <section class="section checklist-section" id="checklist">
+      <div class="container">
+        <div class="checklist-wrapper">
+          <div class="checklist-intro">
+            <span class="section-tag">Interactive Tool</span>
+            <h2 class="section-title">Are You Ready to Vote?</h2>
+            <p class="section-subtitle">
+              Check off each milestone to track your readiness. Your progress is saved automatically on this device.
+            </p>
+            <div class="progress-container">
+              <div class="progress-labels">
+                <span>Readiness Score: <strong id="checklist-percent">0%</strong></span>
+                <span id="checklist-status">Not ready yet</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-fill" id="checklist-progress-bar"></div>
+              </div>
+            </div>
+            <button id="reset-checklist-btn" class="btn btn-secondary btn-sm">Reset Checklist</button>
+          </div>
+
+          <div class="checklist-items" id="checklist-items-container">
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c1" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Confirmed Age & Citizenship</strong>
+                <p>I am at least 18 years old and legally eligible to vote in this election.</p>
+              </div>
+            </label>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c2" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Verified Electoral Roll Entry</strong>
+                <p>I searched my name on the official voter portal and verified my constituency.</p>
+              </div>
+            </label>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c3" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Physical Photo ID Prepared</strong>
+                <p>I have my physical Voter ID card, Passport, Driver's License, or accepted state ID.</p>
+              </div>
+            </label>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c4" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Polling Station Located</strong>
+                <p>I know the exact physical address and room of my assigned polling booth.</p>
+              </div>
+            </label>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c5" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Researched Candidates & Policies</strong>
+                <p>I reviewed candidate track records, manifestos, and educational/criminal disclosures.</p>
+              </div>
+            </label>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-check-id="c6" />
+              <span class="custom-checkbox"></span>
+              <div class="item-text">
+                <strong>Planned My Voting Schedule</strong>
+                <p>I blocked out time on Election Day (early morning or midday) to avoid last-minute delays.</p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Dates & Timeline -->
+    <section class="section dates-section" id="dates">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-tag">Election Calendar</span>
+          <h2 class="section-title">Important Dates & Milestones</h2>
+          <p class="section-subtitle">Stay on track with key dates leading up to the election.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-card">
+            <div class="timeline-date-badge">Phase 1</div>
+            <div class="timeline-date">30 Days Prior</div>
+            <h4>Voter Registration Closes</h4>
+            <p>Final date for new voter enrollment, address updates, and corrections on the electoral roll.</p>
+            <span class="timeline-status status-past">Completed</span>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-date-badge">Phase 2</div>
+            <div class="timeline-date">21 Days Prior</div>
+            <h4>Candidate Nominations Finalized</h4>
+            <p>Official list of candidates and party symbols approved by the Election Commission.</p>
+            <span class="timeline-status status-active">In Progress</span>
+          </div>
+
+          <div class="timeline-card highlight-card">
+            <div class="timeline-date-badge">Phase 3</div>
+            <div class="timeline-date">48 Hours Prior</div>
+            <h4>Campaign Silence Period</h4>
+            <p>All public rallies, loud campaigns, and television political advertising officially cease.</p>
+            <span class="timeline-status status-upcoming">Upcoming</span>
+          </div>
+
+          <div class="timeline-card super-highlight-card">
+            <div class="timeline-date-badge">Phase 4</div>
+            <div class="timeline-date">Election Day</div>
+            <h4>Polling Day (Voting Hours: 7 AM - 6 PM)</h4>
+            <p>Booths open nationwide. Citizens cast their confidential ballots in designated booths.</p>
+            <span class="timeline-status status-critical">Main Event</span>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-date-badge">Phase 5</div>
+            <div class="timeline-date">3 Days Later</div>
+            <h4>Counting Day & Official Results</h4>
+            <p>Tallying of all electronic and postal ballots under media and party observers.</p>
+            <span class="timeline-status status-upcoming">Upcoming</span>
+          </div>
+        </div>
+
+        <div class="calendar-action text-center">
+          <button id="add-reminder-btn" class="btn btn-outline" onclick="alert('Election Day reminder added to your personal awareness checklist! Mark 7:00 AM in your calendar.')">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Set Polling Day Reminder</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Voter IQ Quiz -->
+    <section class="section quiz-wrapper-section" id="quiz-section">
+      <div class="container">
+        <div class="quiz-card" id="quiz-container">
+          <div class="quiz-header" id="quiz-header">
+            <div class="quiz-badge">Interactive Challenge</div>
+            <h2 class="quiz-title">Test Your Voter Knowledge</h2>
+            <p class="quiz-subtitle">Answer 7 quick questions to discover if you are fully equipped for election day!</p>
+            <div class="quiz-meta" id="quiz-meta" style="display: none;">
+              <span id="question-progress">Question 1 of 7</span>
+              <span id="current-score-tag">Score: 0</span>
+            </div>
+            <div class="quiz-progress-bar" id="quiz-progress-bar-wrap" style="display: none;">
+              <div class="quiz-progress-bar-fill" id="quiz-progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="quiz-start-view" id="quiz-start-view">
+            <div class="quiz-hero-illustration">
+              <div class="vote-box-graphic">
+                <svg viewBox="0 0 100 100" width="80" height="80" fill="none">
+                  <rect x="20" y="35" width="60" height="55" rx="6" fill="#2563eb" opacity="0.1" stroke="#2563eb" stroke-width="3"></rect>
+                  <path d="M15 35h70v10H15z" fill="#2563eb" opacity="0.2"></path>
+                  <rect x="40" y="38" width="20" height="4" rx="2" fill="#2563eb"></rect>
+                  <path d="M38 20l24-8 12 20-24 8z" fill="#3b82f6" stroke="#1d4ed8" stroke-width="2.5"></path>
+                  <path d="M48 24l5 5 10-10" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"></path>
+                </svg>
+              </div>
+            </div>
+            <ul class="quiz-perks">
+              <li>⏱️ Takes only 2 minutes</li>
+              <li>🧠 Instant explanations for every answer</li>
+              <li>🏆 Earn your custom Civic Champion badge</li>
+            </ul>
+            <button id="start-quiz-btn" class="btn btn-primary btn-lg">Start Voter Quiz</button>
+          </div>
+
+          <div class="quiz-question-view" id="quiz-question-view" style="display: none;">
+            <div class="question-box">
+              <h3 class="question-text" id="question-title">Question goes here?</h3>
+              <div class="options-list" id="options-container"></div>
+            </div>
+
+            <div class="feedback-box" id="feedback-box" style="display: none;">
+              <div class="feedback-header">
+                <span class="feedback-icon" id="feedback-icon">✓</span>
+                <strong id="feedback-status">Correct!</strong>
+              </div>
+              <p id="feedback-explanation" class="feedback-explanation"></p>
+              <button id="next-question-btn" class="btn btn-primary btn-sm">Next Question &rarr;</button>
+            </div>
+          </div>
+
+          <div class="quiz-result-view" id="quiz-result-view" style="display: none;">
+            <div class="result-badge-wrap" id="result-badge-icon">🎖️</div>
+            <h3 class="result-title" id="result-title">Congratulations!</h3>
+            <p class="result-tier" id="result-tier">Voter IQ Tier: Democracy Champion</p>
+            <div class="result-score-display">
+              You scored <span id="final-score-num">0</span> out of <span id="total-score-num">7</span>
+            </div>
+            <p class="result-message" id="result-message"></p>
+
+            <div class="result-actions">
+              <button id="restart-quiz-btn" class="btn btn-primary">Take Quiz Again</button>
+              <a href="#process" class="btn btn-outline">Review Election Steps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Clear, straightforward answers to the most common queries about voting.</p>
+        </div>
+
+        <div class="faq-accordion" id="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What if I lost my official Voter ID card? Can I still vote?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! As long as your name is registered on the active electoral roll for that polling booth, you can vote by showing any other valid government-approved photo ID such as your Passport, Driver's License, or National Identity Card.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can my employer prevent me from voting or deduct my pay?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-answer">
+              <p>In almost all democratic countries, election days are statutory paid holidays or employers are legally mandated to provide reasonable paid time off for workers to cast their votes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I know my vote on an Electronic Voting Machine (EVM) went through?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-answer">
+              <p>When you press the button corresponding to your chosen candidate, a red LED lights up beside their name, an audible confirmation beep sounds, and the paper audit trail window (VVPAT) displays a printed slip showing the candidate's symbol for approximately 7 seconds before securely dropping into the sealed box.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can someone accompany me inside the booth to help me vote?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-answer">
+              <p>For visually impaired or physically incapacitated voters who cannot record their vote independently, election laws allow an adult companion to assist them inside the voting booth, provided an official companion declaration form is submitted to the presiding officer.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Where can I report illegal voter intimidation or bribery?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-answer">
+              <p>You can immediately inform the Presiding Officer or designated police officers stationed at the polling center, or use official election commission citizen vigilance apps / toll-free national voter hotlines (e.g., 1950 in India or state election integrity helplines).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Pledge Banner -->
+    <section class="pledge-banner">
+      <div class="container text-center">
+        <h2>Take the Citizen Voter Pledge</h2>
+        <p>"I solemnly pledge to uphold democratic traditions, vote ethically and fearlessly in every election, and encourage my community to do the same."</p>
+        <button class="btn btn-light" id="pledge-btn" onclick="this.innerHTML='✓ You Have Pledged! Share with Friends'; this.disabled=true;">
+          I Pledge to Vote!
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 12 2 2 4-4"></path>
+              <path d="M5 7c0-1.1.9-2 2-2h10a2 2 0 0 1 2 2v12H5V7Z"></path>
+              <path d="M22 19H2"></path>
+            </svg>
+          </div>
+          <span>Vote<strong>Aware</strong></span>
+        </div>
+        <p class="footer-bio">A non-partisan, public civic initiative dedicated to making the voting process accessible, transparent, and encouraging for all citizens.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#process">Election Process</a></li>
+          <li><a href="#voter-info">Voter Rights & IDs</a></li>
+          <li><a href="#checklist">Readiness Checklist</a></li>
+          <li><a href="#dates">Calendar & Dates</a></li>
+          <li><a href="#quiz-section">Voter IQ Quiz</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Civic Resources</h4>
+        <ul>
+          <li><a href="https://voters.eci.gov.in" target="_blank" rel="noopener noreferrer">National Voter Portal</a></li>
+          <li><a href="https://eci.gov.in" target="_blank" rel="noopener noreferrer">Election Commission Site</a></li>
+          <li><a href="#faq">Voter FAQs</a></li>
+          <li><a href="tel:1950">Voter Helpline: Dial 1950</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Democratic Ethos</h4>
+        <p class="footer-note">"The ballot is stronger than the bullet."<br><em>— Abraham Lincoln</em></p>
+        <div class="tagline-badge">Every Vote Counts Equal</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>&copy; 2026 VoteAware Public Initiative. Free and open educational platform for democracy.</p>
+        <a href="#top-nav" class="back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
